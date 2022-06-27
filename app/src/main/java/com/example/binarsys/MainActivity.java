@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
             bin_sms+=" ";
         }
 
+
         String finalBin_sms = bin_sms;
         System.out.println(recivedText + " " + finalBin_sms);
         getBinaryCodeText.setOnClickListener(new View.OnClickListener() {
