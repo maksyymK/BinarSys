@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             bin_sms+=" ";
         }
 
-//fuck
+//fuck2
 
         String finalBin_sms = bin_sms;
         System.out.println(recivedText + " " + finalBin_sms);
