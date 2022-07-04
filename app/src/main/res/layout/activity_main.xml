@@ -37,7 +37,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
@@ -63,16 +63,17 @@
         <TextView
             android:id="@+id/reslText"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="200dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/jaldi"
-            android:hint="Type text"
-            android:inputType="textPersonName"
             android:text="Here will be binary code!"
             android:textColor="@color/textfilds"
             android:textSize="20sp"
+            android:scrollbars = "vertical"
+            android:inputType="textMultiLine"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/typeText"/>
+            app:layout_constraintTop_toBottomOf="@+id/typeText"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
 
@@ -80,23 +81,19 @@
         android:id="@+id/getBinTex"
         android:layout_width="150dp"
         android:layout_height="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:srcCompat="@drawable/ic_butgetbin" />
+        app:srcCompat="@drawable/ic_butgetbc" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/jaldi"
-        android:hint="Get Binary code"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/getBinTex"
-        app:layout_constraintEnd_toEndOf="@+id/getBinTex"
-        app:layout_constraintStart_toStartOf="@+id/getBinTex"
-        app:layout_constraintTop_toTopOf="@+id/getBinTex" />
+    <ImageView
+        android:id="@+id/getCopyBc"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/ic_butcopy" />
 
     <!--  <LinearLayout
         android:id="@+id/linearLayout2"
