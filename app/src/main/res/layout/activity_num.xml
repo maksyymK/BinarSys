@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1F1F1"
-    android:saveEnabled="false"
-    tools:context=".MainActivity">
+    tools:context=".NumActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -23,14 +21,14 @@
             android:layout_width="120dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_textfloderc" />
+            app:srcCompat="@drawable/ic_textfloder" />
 
         <ImageView
             android:id="@+id/numF"
             android:layout_width="120dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_numfloder" />
+            app:srcCompat="@drawable/ic_numfloderc" />
 
         <ImageView
             android:id="@+id/binF"
@@ -48,7 +46,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
         android:fontFamily="@font/jaldi_bold"
-        android:text="At this page you can convert your text in binary code"
+        android:text="At this page you can convert your number in binary code"
         android:textColor="#73AC7F"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,17 +71,17 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:fontFamily="@font/jaldi"
-            android:hint="Type text"
-            android:inputType="textPersonName"
+            android:hint="Type number"
             android:textColor="@color/textfilds"
             android:textSize="20sp"
+            android:inputType="number"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/typeText1" />
 
         <TextView
             android:id="@+id/reslText"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="100dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/jaldi"
             android:text="Here will be binary code!"
@@ -114,32 +112,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:srcCompat="@drawable/ic_butcopy" />
-
-    <!--  <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-
-
-      <ImageView
-            android:id="@+id/getCopyText"
-            android:layout_width="150dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="10dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            app:srcCompat="@drawable/ic_butgetbin" />
-
-    </LinearLayout> -->
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
